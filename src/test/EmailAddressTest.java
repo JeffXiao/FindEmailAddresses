@@ -14,7 +14,7 @@ public class EmailAddressTest {
 	public void testFindEmailAddresses()
 	{
     	String testString = "*** test@gmail.com&&^ test2@gmail.com((& test.test3@gmail.com";
-    	ArrayList result = EmailAddresses.find(testString);
+    	ArrayList<String> result = EmailAddresses.find(testString);
     	assertEquals(3, result.size());
 
     	testString = "test@yahoo.com&&^ ((& test.test3@yahoo.com&&^ ";
